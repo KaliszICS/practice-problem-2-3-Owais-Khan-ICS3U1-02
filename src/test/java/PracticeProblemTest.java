@@ -43,24 +43,24 @@ public class PracticeProblemTest {
 
    @Test
    void test2_2() {
-      assertEquals("0 hours and 0 minutes", PracticeProblem.minutesToHours(0));
+      assertEquals("0 hours and 30 minutes", PracticeProblem.minutesToHours(30));
    }
 
    @Test
    void test2_3() {
-      assertEquals(78.53981633974483, PracticeProblem.circleArea(5.0));
+      assertEquals("1 hours and 0 minutes", PracticeProblem.minutesToHours(60));
    }
 
    // test larger double
    @Test
    void test2_4() {
-      assertEquals(3489.960407194446, PracticeProblem.circleArea(33.33));
+      assertEquals("1 hours and 30 minutes", PracticeProblem.minutesToHours(90));
    }
 
    // test long double
    @Test
    void test2_5() {
-      assertEquals(31.006276680299816, PracticeProblem.circleArea(3.141592653589793));
+      assertEquals("2 hours and 55 minutes", PracticeProblem.minutesToHours(175));
    }
 
    //q3
