@@ -63,67 +63,67 @@ public class PracticeProblemTest {
       assertEquals("2 hours and 55 minutes", PracticeProblem.minutesToHours(175));
    }
 
-   //q3
+   //simpleInterest(double principal, double annualRate, int years)
    
    // test 0
    @Test
    void test3_1() {
-      assertEquals(0, PracticeProblem.circleArea(0));
+      assertEquals(0.0, PracticeProblem.simpleInterest(0, 0, 0));
    }
 
    // test 1
    @Test
    void test3_2() {
-      assertEquals(3.141592653589793, PracticeProblem.circleArea(1.0));
+      assertEquals(160.0, PracticeProblem.simpleInterest(200, 10, 8));
    }
 
    // test simple double
    @Test
    void test3_3() {
-      assertEquals(78.53981633974483, PracticeProblem.circleArea(5.0));
+      assertEquals(1.2, PracticeProblem.simpleInterest(1, 15, 8));
    }
 
    // test larger double
    @Test
    void test3_4() {
-      assertEquals(3489.960407194446, PracticeProblem.circleArea(33.33));
+      assertEquals(110.0, PracticeProblem.simpleInterest(55, 100, 2));
    }
 
    // test long double
    @Test
    void test3_5() {
-      assertEquals(31.006276680299816, PracticeProblem.circleArea(3.141592653589793));
+      assertEquals(3291.8307839999998, PracticeProblem.simpleInterest(123.456, 33.33, 80));
    }
 
-   //q4
+   //hypotenuse(double sideA, double sideB)
    
    // test 0
    @Test
    void test4_1() {
-      assertEquals(0, PracticeProblem.circleArea(0));
+      assertEquals(0, PracticeProblem.hypotenuse(0, 0));
    }
 
    // test 1
    @Test
    void test4_2() {
-      assertEquals(3.141592653589793, PracticeProblem.circleArea(1.0));
+      assertEquals(5.0, PracticeProblem.hypotenuse(3.0, 4.0));
    }
 
    // test simple double
    @Test
    void test4_3() {
-      assertEquals(78.53981633974483, PracticeProblem.circleArea(5.0));
+      assertEquals(16.00781059358212, PracticeProblem.hypotenuse(10.0, 12.5));
    }
 
    // test larger double
    @Test
    void test4_4() {
-      assertEquals(3489.960407194446, PracticeProblem.circleArea(33.33));
+      assertEquals(1.4142135623730951, PracticeProblem.hypotenuse(1.0, 1.0));
    }
 
    // test long double
    @Test
    void test4_5() {
-      assertEquals(31.006276680299816, PracticeProblem.circleArea(3.141592653589793));
+      assertEquals(3.258588651548397, PracticeProblem.hypotenuse(0.5, 3.22));
    }
 }
