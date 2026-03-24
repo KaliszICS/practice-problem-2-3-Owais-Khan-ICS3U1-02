@@ -41,23 +41,25 @@ public class PracticeProblemTest {
       assertEquals("0 hours and 0 minutes", PracticeProblem.minutesToHours(0));
    }
 
+   // test minutes
    @Test
    void test2_2() {
       assertEquals("0 hours and 30 minutes", PracticeProblem.minutesToHours(30));
    }
 
+   // test hours
    @Test
    void test2_3() {
       assertEquals("1 hours and 0 minutes", PracticeProblem.minutesToHours(60));
    }
 
-   // test larger double
+   // test both
    @Test
    void test2_4() {
       assertEquals("1 hours and 30 minutes", PracticeProblem.minutesToHours(90));
    }
 
-   // test long double
+   // test larger number
    @Test
    void test2_5() {
       assertEquals("2 hours and 55 minutes", PracticeProblem.minutesToHours(175));
@@ -71,25 +73,25 @@ public class PracticeProblemTest {
       assertEquals(0.0, PracticeProblem.simpleInterest(0, 0, 0));
    }
 
-   // test 1
+   // test normal
    @Test
    void test3_2() {
       assertEquals(160.0, PracticeProblem.simpleInterest(200, 10, 8));
    }
 
-   // test simple double
+   // test small principle
    @Test
    void test3_3() {
       assertEquals(1.2, PracticeProblem.simpleInterest(1, 15, 8));
    }
 
-   // test larger double
+   // test larger annual rate
    @Test
    void test3_4() {
       assertEquals(110.0, PracticeProblem.simpleInterest(55, 100, 2));
    }
 
-   // test long double
+   // test strange doubles
    @Test
    void test3_5() {
       assertEquals(3291.8307839999998, PracticeProblem.simpleInterest(123.456, 33.33, 80));
@@ -103,25 +105,25 @@ public class PracticeProblemTest {
       assertEquals(0, PracticeProblem.hypotenuse(0, 0));
    }
 
-   // test 1
+   // test 3 4 5 triangle
    @Test
    void test4_2() {
       assertEquals(5.0, PracticeProblem.hypotenuse(3.0, 4.0));
    }
 
-   // test simple double
+   // test simple fractions
    @Test
    void test4_3() {
       assertEquals(16.00781059358212, PracticeProblem.hypotenuse(10.0, 12.5));
    }
 
-   // test larger double
+   // test special triangle
    @Test
    void test4_4() {
       assertEquals(1.4142135623730951, PracticeProblem.hypotenuse(1.0, 1.0));
    }
 
-   // test long double
+   // test fractions
    @Test
    void test4_5() {
       assertEquals(3.258588651548397, PracticeProblem.hypotenuse(0.5, 3.22));
